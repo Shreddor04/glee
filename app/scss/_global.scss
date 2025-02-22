@@ -1,6 +1,69 @@
 
-
-
 body{
- 
+    @extend %rubik-500;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    @extend %dmsans-700;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: #bacad1;
+}
+
+.top__title{
+    margin-bottom: 10px;
+    @extend %rubik-400;
+}
+
+.breadcrumbs{
+    &__list{
+        display: inline-flex;;
+    }
+    &__item + .breadcrumbs__item{
+        margin-left: 5px;
+        position: relative;
+        padding-left: 15px;
+        &::before{
+            content: "/";
+            position: absolute;
+            left: 0;
+            color: rgba(34, 41, 51, 0.6);
+        }
+    }
+    &__link{
+        color: rgba(34, 41, 51, 0.6);
+    }
+}
+
+
+
+
+.Log_in {
+    font-size: 36px;
+    font-family: "Rubik";
+
+    line-height: 0.667;
+    text-indent: 0.45px;
+    position: absolute;
+    left: 910.938px;
+    top: 203.838px;
+    z-index: 74;
 }
