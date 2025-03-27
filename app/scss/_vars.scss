@@ -20,3 +20,11 @@ $text_color:#243f4d;
     font-family: 'Rubik-Regular', sans-serif;
     font-weight: 400;
 }
+
+%checkbox-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
