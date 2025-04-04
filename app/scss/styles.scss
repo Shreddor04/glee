@@ -1183,5 +1183,154 @@
 }
 
 
+.blog{
+    padding: 120px 0;
+    &__inner{
+        display: flex;
+    }   
+}
+
+.blog-item{
+    padding-bottom: 50px;
+    width: 830px;
+    margin-right: 70px;
+    &:last-child{
+        padding-bottom: 70px;
+    }
+    &__title{
+        font-size: 36px;
+        margin-bottom:30px;
+        @extend %rubik-400;
+        color: #333333;
+    }
+    &__box{
+        position: relative;
+        margin-bottom: 30px;
+    }
+    &__text{
+        color: $text_color;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &__info{
+        position: absolute;
+        color: #fff;
+        background-color: $main_color;
+        padding: 30px;
+        bottom: 0;
+        font-size: 12px;
+    }
+
+    &__info-date,
+    &__info-author{
+        color: #fff;
+        @extend %rubik-400;
+        padding-left: 20px;
+    }
+    &__info-date{
+        margin-right: 40px;
+        position: relative;
+        &::before{
+            content: "";
+            background-image: url('../images/icon/calendar-days-solid.svg');
+            width: 13px;
+            height: 14px;
+            position: absolute;
+            left: 0;
+            top: -1px;
+        }
+    }
+    &__info-author{
+        position: relative;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 11px;
+            background-image: url('../images/icon/user-solid.svg');
+            left: 0;
+        }
+
+    }
+    &__link{
+        display: inline-block;
+        border: 1px solid $main_color;
+        padding: 20px 83px 20px 17px;
+        color: $main_color;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url('../images/icon/arrow-long-right.svg');
+            width: 22px;
+            height: 9px;
+            right: 18px;
+            top: 24px;
+        }
+    }
+}
+
+.blog-pagination{
+    display: block;
+    margin-top: 40px;
+}
+
+.blog-filters{
+    margin-bottom: 60px;
+    &__form{
+        display: flex;
+        align-items: center;
+    }
+    &__input{
+        border: 2px solid #eef2f5;
+        border-radius: 5px;
+        height: 40px;
+        width: 240px;
+        outline:none;
+        padding: 0 5px;
+    }
+    &__btn{
+        background-color: #edf1f4;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        margin-left: -10px;
+        outline: none;
+        cursor: pointer;
+    }
+    &__img{
+        display: inline-block;
+    }
+}
+
+.blog-filters-item{
+    display: flex;
+    margin-bottom: 20px;
+    &__img{
+        margin-right: 20px;
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+    &__title{
+        font-size: 14px;
+        @extend %rubik-400;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+    &__date{
+        display: inline-block;
+        font-size: 12px;
+        color: #9a9a9a;
+        position: relative;
+        padding-left: 5px;
+        transform: translateY(-2px)
+    }
+
+}
+
+
+
 
 @import 'media';//тут ниже будут прописанны медиа запросы
