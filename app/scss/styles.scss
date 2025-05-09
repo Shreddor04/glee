@@ -1565,8 +1565,128 @@
 
 }
 
+.contacts{
+    
+}
+.contacts-top{
+    &__title-box{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    &__title{
+        font-size: 16px;
+        color: #a3bbc8;
+        margin-bottom: 15px;
+    }
+    &__subtitle{
+        font-size: 35px;
+        color: #436372;
+    }
+    &__inner{
+        display: flex;  
+    }
+}
 
+.contacts{
+    padding-top: 120px;
+}
 
+.contact-item{
+    margin-right: 30px;
+    background-color: #fbfbfb;
+    width: 370px;
+    height: 380px;
+    border: 3px solid #fbfbfb;
+    &:hover{
+        transition: all .3s;
+        border: 3px solid #a3bbc8;
+        span{
+                background-color: #a3bbc8;
+        
+                path {
+                    fill: #fff;
+                }
+        
+            }
+    }
+    &__info{
+        text-align: center;
+        padding-top: 60px;
+        a{
+            line-height: 30px;
+            color: #565872
+        }
+    }
+    &__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #222;
+    }
+    &__text{
+        line-height: 30px;
+        color: #565872
+    }
+    &__box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        span{
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            
+        }
+    }
+
+}
+
+.message{
+    margin-right: 50px;
+    &__form{
+        &:hover{
+            border: none;
+        }
+    }
+    &__form-box{
+        max-width: 620px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form-input{
+        border: none;
+        width: 300px;
+        height: 50px;
+        background-color: #fafafa;
+        &:hover {
+                border: none;
+            }
+    }
+    &__form-comment{
+        width: 620px;
+        position: relative;
+    }
+    &__form-teaxtarea{
+        width: 620px;
+        border: none;
+        background-color: #fafafa;
+        &:hover {
+                border: none;
+            }
+    }
+}
+
+.map {
+    padding: 200px 0;
+    &__inner{
+        display: flex;
+    }
+}
+
+#map{
+    width: 100%;
+    height: 450px;
+}
 
 
 @import 'media';//тут ниже будут прописанны медиа запросы
