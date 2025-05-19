@@ -1,9 +1,14 @@
 $(function(){
 
+
+
+
     $('.related__inner').slick({
         slidesToShow:4,
         arrows: true
     })
+
+
 
 
 
@@ -40,6 +45,17 @@ $(function(){
 
     })
 
+    $('.top-slider-main__inner').slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000
+
+    })
+
+    var mixer = mixitup('.products-items');
+    var mixer = mixitup('.design-items');
+
     $(".filters-price__input").ionRangeSlider({
 
 
@@ -71,16 +87,6 @@ $(function(){
     $('.filters-category__select').styler();
 
 
-    $('.top-slider-main__inner').slick({
-        dots:true,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000
-
-    })
-
-    var mixer = mixitup('.products-items');
-    var mixer = mixitup('.design-items');
 
 
 })
