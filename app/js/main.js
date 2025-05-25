@@ -1,6 +1,14 @@
 $(function(){
 
 
+    $('.footer-top__title').on('click',function(){
+        $(this).next().slideToggle();
+        $(this).toggleClass('active')
+    })
+
+    $('.user-nav__link-elips').on('click', function(){
+        $('.menu__list').toggleClass('menu__list--active'); 
+    })
 
 
     $('.related__inner').slick({
