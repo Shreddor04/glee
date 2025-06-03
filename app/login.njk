@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+
+     {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <h2 class="top__title title">Log in</h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Log in</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="modal">
+            <div class="container">
+                <form class="modal__form">
+                    <label class="modal__label">
+                        Username or email address *
+                        <input class="modal__input" type="text" required>
+                    </label>
+                
+                    <label class="modal__label">
+                        Password *
+                        <input class="modal__input" type="password" required>
+                    </label>
+                    <button class="modal__btn">Login</button>
+                    <div class="modal__remember">
+                        <label class="modal__label">
+                            <input type="checkbox">
+                            Remember me
+                        </label>
+                        <a class="modal__label-link" href="#">Lost your password?</a>
+                    </div>
+                    <a class="modal__label-link modal__reg-link" href="#">Not registered? No problem</a>
+                    <button class="modal__btn modal__acc-create">Create an account</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+<!-- НАЧАЛО FOTTER -->
+    {% include 'app/module/_footer/_footer.html' %}
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>

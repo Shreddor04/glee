@@ -9,53 +9,7 @@
 </head>
 <body>
 
-     <header class="header">
-    <div class="container header__container">
-        <div class="header__inner">
-            <a class="header__inner-logo" href="#">
-                <img class="header__inner-img" src="images/logo.svg" alt="logo">
-            </a>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">Home+</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="blog.html">About</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="blog-one.html">Blog</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="product-list.html">Products</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="#">News</a>
-                    </li>
-                    <li class="menu__list-item">
-                        <a class="menu__list-link" href="contacts.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="user-nav">
-                <a class="user-nav__link-search" href="#">
-                    <img class="user-nav__link-search-img" src="images/icon/search.svg" alt="user icon">
-                </a>
-                <a class="user-nav__link-heart" href="#">
-                    <img class="user-nav__link-heart-img" src="images/icon/heart.png" alt="user icon">
-                    <span class="user-nav__num">0</span>
-                </a>
-                <a class="user-nav__link-cart" href="#">
-                    <img class="user-nav__link-cart-img" src="images/icon/cart.svg" alt="user icon">
-                    <span class="user-nav__num">0</span>
-                </a>
-                <a class="user-nav__link-elips" href="#">
-                    <img class="user-nav__link-elips-img" src="images/icon/elips.svg" alt="user icon">
-                </a>
-            </div>
-        </div>
-    </div>
-</header>
+     {% include 'app/module/_header/_header.html' %}
     <main class="main">
 
         <section class="top">

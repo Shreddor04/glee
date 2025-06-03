@@ -181,3 +181,9 @@
         }
 
 }
+
+@media (max-width:360px){
+    .header__inner-logo::after{
+        right: 80px;
+    }
+}

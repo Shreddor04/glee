@@ -4,11 +4,11 @@
 
     &-bottom {
         background-color: #fdf6ef;
-        padding: 240px 0 68px 0;
+        padding: 130px 0 68px 0;
         position: absolute;
         right: 0;
         left: 0;
-        bottom: -205px;
+        bottom: -70px;
         z-index: 0;
 
         &__lists {
@@ -180,5 +180,14 @@
             display: none;
 
         }
+    }
+    .article-top__link{
+        bottom: 170px;
+    }
+    .article-top__items{
+        padding-bottom: 70px;   
+    }
+    .article-top__admin{
+        padding-right: 20px;
     }
 }
