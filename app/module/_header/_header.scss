@@ -1,0 +1,189 @@
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 65px;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    &__inner-logo {
+        position: relative;
+    }
+
+    &__inner-logo::after {
+        content: 'Glee.';
+        position: absolute;
+        right: -100px;
+        top: 0;
+        font-size: 36px;
+        @extend %rubik-500;
+        font-weight: bold;
+        color: #436372;
+    }
+}
+
+.menu {
+    &__list {
+        display: flex;
+    }
+
+    &__list-item+.menu__list-item {
+        padding-left: 35px;
+    }
+
+    &__list-link {
+        color: #436372;
+        font-size: 15px;
+        @extend %rubik-500;
+        font-weight: bold;
+    }
+}
+
+.user-nav {
+    display: flex;
+
+    &__link-search {
+        height: 50px;
+        width: 50px;
+        background-color: #d0d8dd;
+        border-radius: 50%;
+        position: relative;
+        margin-right: 25px;
+    }
+
+    &__link-search-img {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+    }
+
+    &__link-elips {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #a3bbc8;
+        position: relative;
+        margin-left: 15px;
+    }
+
+    &__link-elips-img {
+        position: relative;
+        top: 30%;
+        left: 30%;
+    }
+
+    &__link-heart,
+    &__link-cart {
+        width: 65px;
+        height: 50px;
+        background-color: #fcd7b6;
+        border-radius: 50% 0 0 50%;
+        position: relative;
+    }
+
+    &__link-heart-img,
+    &__link-cart-img {
+        position: absolute;
+        top: 35%;
+        left: 35%;
+    }
+
+    &__link-cart {
+        border-radius: 0 50% 50% 0;
+    }
+
+    &__num {
+        height: 16px;
+        width: 16px;
+        background-color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        font-size: 13px;
+        @extend %dmsans-400;
+        position: absolute;
+        right: 16px;
+        top: 7px;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .header__container{
+        padding: 0;
+    }
+    .header__inner{
+        position: relative;
+    }
+    .menu{
+        position: absolute;
+        top: 180px;
+        width: 100%;
+        z-index: 1;
+        &__list{
+            display: block;
+            transform: translateY(-200%);
+            transition: all .5s;
+            background-color: #fff;
+            z-index: 1;
+        }
+        &__list-item + .menu__list-item{
+            padding: 10px 0;
+        }
+        &__list-item{
+            padding: 10px 0;
+            text-align: center;
+            max-width: 100%;
+        }
+
+    }
+    .menu__list--active{
+        transform: translateY(0);
+        transition: all .5s;
+
+    }
+    .footer-top__logo{
+        z-index: -1;
+    }
+
+}
+
+@media (max-width:860px) {
+
+}
+
+@media (max-width:480px) {
+    .header__inner{
+        display: block;
+    }
+    .header__inner-logo::after{
+        right: 150px;
+    }
+    .menu__list{
+        display: block;
+        width: 100%;
+        padding: 30px;
+    }
+    .user-nav{
+        justify-content: center;
+        margin-top: 28px;
+    }
+    .header__inner-logo{
+        display: flex;
+        justify-content: space-around;
+        padding-right: 100px;
+    }
+}
+
+@media (max-width:440px){
+    .header__inner-logo::after {
+            right: 100px;
+        }
+
+}
+
+@media (max-width:360px){
+    .header__inner-logo::after{
+        right: 80px;
+    }
+}

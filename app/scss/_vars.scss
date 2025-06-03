@@ -1,0 +1,30 @@
+//$ создание переменных 
+
+$main_color:#a3bbc8;
+$text_color:#243f4d;
+
+
+%dmsans-700{
+    font-family: 'DMSans-Bold', sans-serif;
+    font-weight: bold;
+}
+%dmsans-400{
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
+}
+%rubik-500{
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+%rubik-400{
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%checkbox-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/blog-one.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+<body>
+
+     {% include 'app/module/_header/_header.html' %}
+    <main class="main">
+
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <h2 class="top__title title">Blog Details</h2>
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Blog</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a class="breadcrumbs__link" href="#">Blog details</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="blog">
+            <div class="container">
+                <div class="blog__inner">
+
+                    <div class="blog-content">
+                        <div class="blog-item blog-one">
+                            <div class="blog-item__box">
+                                <a class="blog-item__link-box" href="#">
+                                    <img class="blog-item__img" src="images/blog/1.jpg" alt="blog img">
+                                    <div class="blog-item__info">
+                                        <span class="blog-item__info-date">28 JANUARY, 2020</span>
+                                        <a class="blog-item__info-author" href="#">BY ADMIN</a>
+                                    </div>
+                                </a>
+                            </div>                    
+                        </div>
+                        <div class="blog-one">
+                            <h2>Fonsectetur adipisicing eiusmod</h2>
+                            <p>
+                                Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim venia Lorem ipsum
+                                dolor sit amet, consectetur adipisicing elit,
+                            </p>
+                            <p>
+                                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut alLorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <blockquote>
+                                Sdipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris
+                                <span>Wiusmod tempor</span>
+                            </blockquote>
+
+                            <div class="blog-one__content">
+                                <img class="blog-one__img" src="images/blog/blog-one/1.jpg" alt="">
+                                <div class="blog-one__content-inner">
+                                    <h3>Riusmod tempor incididunt</h3>
+                                    <p>
+                                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    </p>
+                                </div>
+                            </div>
+
+                            <h3>Kajtsal jervcm eoaspckred</h3>
+                            <p>
+                            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            </p>
+
+                        </div>
+                        <div class="blog-one__box">
+                            <div class="blog-one__box-author">
+                                <img src="images/blog/authors/1.jpg" alt="">
+                                <div class="blog-one__box-info">
+                                    <h5 class="blog-one__box-author-title">Mark N. Hernandez</h5>
+                                    <p class="blog-one__box-author-position">Designer</p>
+                                </div>
+                            </div>
+                            <div class="blog-one__box-tags">
+                                <div class="blog-one__box-tag">
+                                    <span>Tags:</span> <a href="#">All,</a> <a href="#">Trending</a>
+                                </div>
+                                <div class="blog-one__box-social">
+                                    <span>Share:</span> 
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="16px">
+                                            <path fill-rule="evenodd" fill="rgb(161, 161, 161)"
+                                                d="M6.190,0.125 C6.603,0.125 7.018,0.147 7.430,0.165 C7.698,0.176 7.967,0.215 8.219,0.242 L8.200,2.727 L8.002,2.727 C7.730,2.727 7.457,2.724 7.184,2.724 C6.980,2.724 6.775,2.725 6.571,2.732 C5.912,2.754 5.427,3.001 5.394,3.824 C5.373,4.416 5.358,5.725 5.357,5.793 C5.391,5.793 6.042,5.795 6.697,5.795 C7.024,5.795 7.344,5.795 7.568,5.793 L8.099,5.793 C7.966,6.748 7.844,7.663 7.711,8.585 L5.357,8.585 L5.304,15.556 L2.414,15.556 L2.467,8.574 L0.103,8.574 L0.124,5.798 L2.499,5.798 L2.501,5.590 C2.505,5.031 2.498,4.471 2.519,3.912 C2.527,3.561 2.546,3.199 2.610,2.847 C2.770,1.998 3.164,1.284 3.876,0.774 C4.499,0.330 5.208,0.143 5.960,0.127 C6.036,0.125 6.113,0.125 6.190,0.125 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="13px">
+                                            <path fill-rule="evenodd" fill="rgb(161, 161, 161)"
+                                                d="M14.690,2.277 C14.585,2.436 14.480,2.584 14.358,2.727 C14.047,3.111 13.688,3.451 13.286,3.742 L13.236,3.835 C13.249,4.268 13.229,4.702 13.171,5.135 C13.054,6.045 12.790,6.917 12.399,7.746 C11.987,8.601 11.460,9.375 10.797,10.055 C9.669,11.212 8.319,11.959 6.748,12.304 C6.209,12.419 5.666,12.480 5.112,12.496 C5.023,12.498 4.935,12.500 4.847,12.500 C3.259,12.500 1.787,12.076 0.431,11.234 L0.361,11.191 C0.593,11.215 0.822,11.228 1.050,11.228 C1.825,11.228 2.570,11.083 3.298,10.790 C3.799,10.582 4.262,10.318 4.698,9.973 C3.179,9.924 2.233,8.826 1.987,7.938 C2.169,7.973 2.351,7.990 2.532,7.990 C2.769,7.990 3.006,7.961 3.244,7.905 L3.288,7.883 C2.461,7.691 1.828,7.252 1.394,6.539 C1.102,6.067 0.969,5.546 0.973,4.981 C1.388,5.201 1.815,5.321 2.276,5.332 C1.659,4.888 1.247,4.301 1.083,3.555 C0.918,2.809 1.033,2.101 1.417,1.432 C2.988,3.303 4.988,4.329 7.438,4.498 C7.423,4.378 7.407,4.279 7.391,4.175 C7.314,3.484 7.462,2.842 7.839,2.261 C8.311,1.526 8.978,1.070 9.835,0.933 C10.017,0.903 10.195,0.888 10.368,0.888 C11.136,0.888 11.814,1.182 12.396,1.751 C12.432,1.783 12.463,1.801 12.504,1.801 C12.517,1.801 12.532,1.799 12.549,1.794 C13.153,1.668 13.726,1.449 14.260,1.142 L14.298,1.120 C14.085,1.800 13.658,2.326 13.052,2.716 C13.623,2.656 14.162,2.502 14.690,2.277 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="14px">
+                                            <path fill-rule="evenodd" fill="rgb(161, 161, 161)"
+                                                d="M13.920,10.779 C13.496,12.337 12.480,13.258 10.904,13.511 C10.315,13.606 8.724,13.663 7.136,13.663 C5.510,13.663 3.886,13.603 3.340,13.461 C1.791,13.061 0.867,12.052 0.621,10.483 C0.437,9.331 0.418,3.978 0.750,2.815 C1.184,1.301 2.195,0.412 3.727,0.160 C4.421,0.046 5.779,0.006 7.150,0.006 C8.425,0.006 9.711,0.041 10.485,0.083 C11.423,0.133 12.281,0.434 12.978,1.104 C13.643,1.740 13.983,2.535 14.068,3.435 C14.170,4.509 14.236,9.589 13.920,10.779 ZM12.839,3.550 C12.717,2.348 11.982,1.559 10.794,1.372 C10.205,1.283 8.788,1.243 7.378,1.243 C6.018,1.243 4.664,1.280 4.069,1.344 C2.878,1.482 2.077,2.217 1.886,3.402 C1.691,4.657 1.693,9.353 1.839,10.297 C1.991,11.278 2.546,11.953 3.525,12.227 C4.055,12.376 5.643,12.429 7.199,12.429 C8.632,12.429 10.039,12.384 10.567,12.326 C11.770,12.194 12.565,11.454 12.755,10.258 C12.951,9.057 12.951,4.674 12.839,3.550 ZM10.982,4.021 C10.527,4.016 10.167,3.648 10.171,3.199 C10.174,2.747 10.539,2.382 10.990,2.382 L10.999,2.382 C11.450,2.382 11.814,2.749 11.811,3.204 C11.807,3.654 11.437,4.021 10.982,4.021 ZM7.292,10.340 C5.355,10.340 3.804,8.771 3.818,6.835 C3.834,4.899 5.414,3.330 7.350,3.336 C9.281,3.336 10.838,4.905 10.823,6.841 C10.809,8.771 9.228,10.340 7.292,10.340 ZM7.357,4.570 L7.337,4.570 C6.096,4.570 5.073,5.569 5.053,6.813 C5.033,8.064 6.028,9.090 7.279,9.100 L7.299,9.101 C8.541,9.101 9.563,8.101 9.584,6.857 C9.604,5.601 8.608,4.581 7.357,4.570 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="12px">
+                                            <path fill-rule="evenodd" fill="rgb(161, 161, 161)"
+                                                d="M18.929,4.964 L18.929,5.019 L18.918,6.461 L18.917,6.521 L18.857,6.521 L16.926,6.521 L16.911,8.452 L16.911,8.507 L16.856,8.507 L15.408,8.507 L15.353,8.507 L15.354,8.452 L15.368,6.521 L13.438,6.521 L13.377,6.521 L13.378,6.461 L13.389,5.019 L13.389,4.964 L13.450,4.964 L15.380,4.964 L15.395,3.028 L15.395,2.973 L15.450,2.973 L16.898,2.973 L16.953,2.973 L16.953,3.028 L16.938,4.964 L18.869,4.964 L18.929,4.964 ZM8.139,11.541 C7.632,11.672 7.117,11.736 6.599,11.736 C6.489,11.736 6.378,11.733 6.267,11.727 C5.149,11.661 4.132,11.310 3.231,10.646 C2.069,9.791 1.338,8.650 1.030,7.240 C0.919,6.730 0.879,6.220 0.922,5.705 C1.002,4.487 1.427,3.395 2.208,2.446 C3.016,1.453 4.046,0.806 5.278,0.494 C5.591,0.411 5.904,0.362 6.222,0.345 C6.403,0.340 6.585,0.329 6.766,0.329 C7.731,0.340 8.634,0.581 9.464,1.069 C10.021,1.388 10.337,1.711 10.473,1.810 C9.904,2.369 9.357,2.918 8.799,3.466 C8.384,3.109 7.926,2.781 7.132,2.660 C6.967,2.636 6.804,2.624 6.645,2.624 C5.051,2.624 3.715,3.777 3.360,5.287 C3.275,5.627 3.251,5.973 3.280,6.319 C3.402,7.723 4.342,8.875 5.611,9.286 C5.935,9.388 6.270,9.436 6.607,9.436 C6.686,9.436 6.765,9.434 6.844,9.429 C7.443,9.390 8.003,9.231 8.510,8.897 C9.365,8.315 9.641,7.405 9.643,7.180 L6.588,7.180 C6.588,7.105 6.599,5.677 6.604,4.980 L6.610,4.887 L11.974,4.887 C12.263,6.560 12.003,8.320 10.961,9.697 C10.241,10.646 9.282,11.244 8.139,11.541 Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="blog-one__comments comments">
+                            <h3 class="comments__title">
+                                3 Comments
+                            </h3>
+                            <div class="comments__inner">
+                                <img class="comments__author" src="images/blog/comments/1.jpg" alt="">
+                                <div class="commens__info">
+                                    <div class="comments__info-item">
+                                        <h3>Delores G. Roberts</h3>
+                                        <span>Add 11 Oct 2020</span>
+                                    </div>
+                                    <p class="comments__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent
+                                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices</p>
+                                    <a class="comments__info-link" href="#">Reply
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="16px"
+                                                viewBox="0 0 14 16" version="1.1">
+                                                <g id="surface1">
+                                                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                                                        d="M 13.707031 8.707031 C 14.097656 8.316406 14.097656 7.679688 13.707031 7.289062 L 8.707031 2.289062 C 8.316406 1.898438 7.679688 1.898438 7.289062 2.289062 C 6.898438 2.679688 6.898438 3.316406 7.289062 3.707031 L 10.585938 7 L 1 7 C 0.445312 7 0 7.445312 0 8 C 0 8.554688 0.445312 9 1 9 L 10.585938 9 L 7.292969 12.292969 C 6.902344 12.683594 6.902344 13.320312 7.292969 13.710938 C 7.683594 14.101562 8.320312 14.101562 8.710938 13.710938 L 13.710938 8.710938 Z M 13.707031 8.707031 " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="comments__inner comments__answer">
+                                <img class="comments__author" src="images/blog/comments/2.jpg" alt="">
+                                <div class="commens__info">
+                                    <div class="comments__info-item">
+                                        <h3>Delores G. Roberts</h3>
+                                        <span>Add 11 Oct 2020</span>
+                                    </div>
+                                    <p class="comments__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa
+                                        et tristique convallis. Class aptent
+                                        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem,
+                                        ultrices</p>
+                                    <a class="comments__info-link" href="#">Reply
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px"
+                                                height="16px" viewBox="0 0 14 16" version="1.1">
+                                                <g id="surface1">
+                                                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                                                        d="M 13.707031 8.707031 C 14.097656 8.316406 14.097656 7.679688 13.707031 7.289062 L 8.707031 2.289062 C 8.316406 1.898438 7.679688 1.898438 7.289062 2.289062 C 6.898438 2.679688 6.898438 3.316406 7.289062 3.707031 L 10.585938 7 L 1 7 C 0.445312 7 0 7.445312 0 8 C 0 8.554688 0.445312 9 1 9 L 10.585938 9 L 7.292969 12.292969 C 6.902344 12.683594 6.902344 13.320312 7.292969 13.710938 C 7.683594 14.101562 8.320312 14.101562 8.710938 13.710938 L 13.710938 8.710938 Z M 13.707031 8.707031 " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="comments__inner">
+                                <img class="comments__author" src="images/blog/comments/3.jpg" alt="">
+                                <div class="commens__info">
+                                    <div class="comments__info-item">
+                                        <h3>Delores G. Roberts</h3>
+                                        <span>Add 11 Oct 2020</span>
+                                    </div>
+                                    <p class="comments__info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et tristique convallis. Class aptent
+                                    taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices</p>
+                                    <a class="comments__info-link" href="#">Reply
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="16px"
+                                                viewBox="0 0 14 16" version="1.1">
+                                                <g id="surface1">
+                                                    <path style=" stroke:none;fill-rule:nonzero;fill-opacity:1;"
+                                                        d="M 13.707031 8.707031 C 14.097656 8.316406 14.097656 7.679688 13.707031 7.289062 L 8.707031 2.289062 C 8.316406 1.898438 7.679688 1.898438 7.289062 2.289062 C 6.898438 2.679688 6.898438 3.316406 7.289062 3.707031 L 10.585938 7 L 1 7 C 0.445312 7 0 7.445312 0 8 C 0 8.554688 0.445312 9 1 9 L 10.585938 9 L 7.292969 12.292969 C 6.902344 12.683594 6.902344 13.320312 7.292969 13.710938 C 7.683594 14.101562 8.320312 14.101562 8.710938 13.710938 L 13.710938 8.710938 Z M 13.707031 8.707031 " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="posting">
+                            <h3 class="posting__title">Leave A Comment</h3>
+                            <form class="posting__form">
+                                <div class="posting__form-box">
+                                    <div class="posting__form-name">
+                                        <input class="posting__form-input" type="text" placeholder="Name">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px">
+                                                <path fill-rule="evenodd" fill="rgb(67, 99, 114)"
+                                                    d="M13.810,12.755 C13.810,12.982 13.618,13.166 13.382,13.166 L0.549,13.166 C0.313,13.166 0.121,12.982 0.121,12.755 C0.121,9.765 2.218,7.264 5.062,6.465 C4.027,5.848 3.330,4.754 3.330,3.499 C3.330,1.571 4.961,0.003 6.966,0.003 C8.970,0.003 10.602,1.571 10.602,3.499 C10.602,4.754 9.905,5.848 8.869,6.465 C11.713,7.264 13.810,9.765 13.810,12.755 ZM9.746,3.499 C9.746,2.025 8.499,0.826 6.966,0.826 C5.433,0.826 4.185,2.025 4.185,3.499 C4.185,4.974 5.433,6.173 6.966,6.173 C8.499,6.173 9.746,4.974 9.746,3.499 ZM6.966,6.996 C3.807,6.996 1.212,9.359 0.992,12.343 L12.939,12.343 C12.719,9.359 10.124,6.996 6.966,6.996 Z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                    <div class="posting__form-email">
+                                        <input class="posting__form-input" type="email" placeholder="youremail@gmail.com">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="13px">
+                                                <path fill-rule="evenodd" fill="rgb(67, 99, 114)"
+                                                    d="M17.624,12.629 C17.624,12.629 17.624,12.631 17.623,12.631 C17.623,12.632 17.621,12.632 17.621,12.633 C17.388,12.856 17.068,12.994 16.714,12.994 L1.286,12.994 C0.932,12.994 0.612,12.856 0.379,12.632 C0.378,12.632 0.377,12.632 0.377,12.631 C0.376,12.631 0.376,12.630 0.376,12.629 C0.144,12.405 -0.000,12.097 -0.000,11.757 L-0.000,1.858 C-0.000,1.176 0.577,0.621 1.286,0.621 L16.714,0.621 C17.423,0.621 18.000,1.176 18.000,1.858 L18.000,11.757 C18.000,12.097 17.856,12.405 17.624,12.629 ZM7.536,6.325 L1.463,12.169 L16.537,12.169 L10.463,6.325 L9.737,6.814 C9.517,6.963 9.258,7.037 9.000,7.037 C8.741,7.037 8.483,6.963 8.263,6.814 L7.536,6.325 ZM0.863,1.830 C0.862,1.840 0.857,1.848 0.857,1.858 L0.857,11.586 L6.823,5.844 L0.863,1.830 ZM1.788,1.446 L8.754,6.138 C8.901,6.237 9.099,6.237 9.246,6.138 L16.211,1.446 L1.788,1.446 ZM17.143,1.858 C17.143,1.848 17.137,1.840 17.137,1.830 L11.177,5.844 L17.143,11.586 L17.143,1.858 Z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="posting__form-comment">
+                                    <textarea class="posting__form-textarea" placeholder="Comment"></textarea>
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="15px">
+                                            <path fill-rule="evenodd" fill="rgb(67, 99, 114)"
+                                                d="M16.714,12.518 L5.766,12.518 L3.303,14.880 C3.221,14.958 3.111,15.000 3.000,15.000 C2.945,15.000 2.889,14.990 2.836,14.969 C2.676,14.905 2.571,14.755 2.571,14.589 L2.571,12.518 L1.286,12.518 C0.577,12.518 -0.000,11.965 -0.000,11.285 L-0.000,1.424 C-0.000,0.744 0.577,0.191 1.286,0.191 L16.714,0.191 C17.423,0.191 18.000,0.744 18.000,1.424 L18.000,11.285 C18.000,11.965 17.423,12.518 16.714,12.518 ZM17.143,1.424 C17.143,1.197 16.950,1.013 16.714,1.013 L1.286,1.013 C1.049,1.013 0.857,1.197 0.857,1.424 L0.857,11.285 C0.857,11.512 1.049,11.696 1.286,11.696 L3.000,11.696 C3.237,11.696 3.428,11.880 3.428,12.107 L3.428,13.597 L5.285,11.817 C5.366,11.740 5.475,11.696 5.588,11.696 L16.714,11.696 C16.950,11.696 17.143,11.512 17.143,11.285 L17.143,1.424 ZM12.343,6.971 C11.988,6.971 11.700,6.695 11.700,6.355 C11.700,6.014 11.988,5.738 12.343,5.738 C12.698,5.738 12.986,6.014 12.986,6.355 C12.986,6.695 12.698,6.971 12.343,6.971 ZM9.000,6.971 C8.645,6.971 8.357,6.695 8.357,6.355 C8.357,6.014 8.645,5.738 9.000,5.738 C9.355,5.738 9.643,6.014 9.643,6.355 C9.643,6.695 9.355,6.971 9.000,6.971 ZM5.414,6.971 C5.059,6.971 4.772,6.695 4.772,6.355 C4.772,6.014 5.059,5.738 5.414,5.738 C5.769,5.738 6.057,6.014 6.057,6.355 C6.057,6.695 5.769,6.971 5.414,6.971 Z" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <button class="posting__form-btn" type="submit">Post Comment</button>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    
+                    
+                    <div class="blog-aside">
+                    
+                        <div class="blog-aside__search blog-filters">
+                            <form class="blog-filters__form" action="#">
+                                <input class="blog-filters__input" type="text">
+                                <button class="blog-filters__btn" type="submit">
+                                    <img class="blog-filters__img" src="images/icon/blog-search.svg" alt="">
+                                </button>
+                            </form>
+                        </div>
+                    
+                    
+                    
+                    
+                        <div class="filters-category product-filters__item">
+                    
+                            <div class="filters-title">
+                                <h2 class="filters-title">
+                                    CATEGORY
+                                    <span></span>
+                                </h2>
+                            </div>
+                    
+                    
+                            <select class="filters-category__select">
+                                <option class="filters-category-option">Chair</option>
+                                <option class="filters-category-option">Table</option>
+                                <option class="filters-category-option">Lamp</option>
+                                <option class="filters-category-option">Watch</option>
+                                <option class="filters-category-option">Clock</option>
+                            </select>
+                    
+                            <select class="filters-category__select">
+                                <option class="filters-category-option">Table</option>
+                                <option class="filters-category-option">Chair</option>
+                                <option class="filters-category-option">Lamp</option>
+                                <option class="filters-category-option">Watch</option>
+                                <option class="filters-category-option">Clock</option>
+                            </select>
+                    
+                            <select class="filters-category__select">
+                                <option class="filters-category-option">Lamp</option>
+                                <option class="filters-category-option">Table</option>
+                                <option class="filters-category-option">Chair</option>
+                                <option class="filters-category-option">Watch</option>
+                                <option class="filters-category-option">Clock</option>
+                            </select>
+                    
+                            <select class="filters-category__select">
+                                <option class="filters-category-option">Watch</option>
+                                <option class="filters-category-option">Chair</option>
+                                <option class="filters-category-option">Table</option>
+                                <option class="filters-category-option">Lamp</option>
+                                <option class="filters-category-option">Clock</option>
+                            </select>
+                    
+                            <select class="filters-category__select">
+                                <option class="filters-category-option">Clock</option>
+                                <option class="filters-category-option">Chair</option>
+                                <option class="filters-category-option">Table</option>
+                                <option class="filters-category-option">Lamp</option>
+                                <option class="filters-category-option">Watch</option>
+                            </select>
+                        </div>
+                        <div class="blog-filters blog-filters__recent">
+                            <div class="filters-title">
+                                <h2 class="filters-title">
+                                    Recent Posts
+                                    <span></span>
+                                </h2>
+                            </div>
+
+                            <div class="blog-filters-item">
+                                <img class="blog-filters-item__img"  src="images/blog/aside/1.jpg" alt="aside img">
+                                <div class="blog-filters-item__info">
+                                    <a class="blog-filters-item__link" href="#">
+                                        <h5 class="blog-filters-item__title">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </h5>
+                                        <span class="blog-filters-item__calendar">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="14px"
+                                                viewBox="0 0 12 13" version="1.1">
+                                                <g id="surface1">
+                                                    <path style="stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                        d="M 3.429688 0 C 3.902344 0 4.285156 0.363281 4.285156 0.8125 L 4.285156 1.625 L 7.714844 1.625 L 7.714844 0.8125 C 7.714844 0.363281 8.097656 0 8.570312 0 C 9.046875 0 9.429688 0.363281 9.429688 0.8125 L 9.429688 1.625 L 10.714844 1.625 C 11.425781 1.625 12 2.171875 12 2.84375 L 12 4.0625 L 0 4.0625 L 0 2.84375 C 0 2.171875 0.574219 1.625 1.285156 1.625 L 2.570312 1.625 L 2.570312 0.8125 C 2.570312 0.363281 2.953125 0 3.429688 0 Z M 0 4.875 L 12 4.875 L 12 11.78125 C 12 12.453125 11.425781 13 10.714844 13 L 1.285156 13 C 0.574219 13 0 12.453125 0 11.78125 Z M 1.714844 6.90625 L 1.714844 7.71875 C 1.714844 7.941406 1.90625 8.125 2.144531 8.125 L 3 8.125 C 3.234375 8.125 3.429688 7.941406 3.429688 7.71875 L 3.429688 6.90625 C 3.429688 6.683594 3.234375 6.5 3 6.5 L 2.144531 6.5 C 1.90625 6.5 1.714844 6.683594 1.714844 6.90625 Z M 5.144531 6.90625 L 5.144531 7.71875 C 5.144531 7.941406 5.335938 8.125 5.570312 8.125 L 6.429688 8.125 C 6.664062 8.125 6.855469 7.941406 6.855469 7.71875 L 6.855469 6.90625 C 6.855469 6.683594 6.664062 6.5 6.429688 6.5 L 5.570312 6.5 C 5.335938 6.5 5.144531 6.683594 5.144531 6.90625 Z M 9 6.5 C 8.765625 6.5 8.570312 6.683594 8.570312 6.90625 L 8.570312 7.71875 C 8.570312 7.941406 8.765625 8.125 9 8.125 L 9.855469 8.125 C 10.09375 8.125 10.285156 7.941406 10.285156 7.71875 L 10.285156 6.90625 C 10.285156 6.683594 10.09375 6.5 9.855469 6.5 Z M 1.714844 10.15625 L 1.714844 10.96875 C 1.714844 11.191406 1.90625 11.375 2.144531 11.375 L 3 11.375 C 3.234375 11.375 3.429688 11.191406 3.429688 10.96875 L 3.429688 10.15625 C 3.429688 9.933594 3.234375 9.75 3 9.75 L 2.144531 9.75 C 1.90625 9.75 1.714844 9.933594 1.714844 10.15625 Z M 5.570312 9.75 C 5.335938 9.75 5.144531 9.933594 5.144531 10.15625 L 5.144531 10.96875 C 5.144531 11.191406 5.335938 11.375 5.570312 11.375 L 6.429688 11.375 C 6.664062 11.375 6.855469 11.191406 6.855469 10.96875 L 6.855469 10.15625 C 6.855469 9.933594 6.664062 9.75 6.429688 9.75 Z M 8.570312 10.15625 L 8.570312 10.96875 C 8.570312 11.191406 8.765625 11.375 9 11.375 L 9.855469 11.375 C 10.09375 11.375 10.285156 11.191406 10.285156 10.96875 L 10.285156 10.15625 C 10.285156 9.933594 10.09375 9.75 9.855469 9.75 L 9 9.75 C 8.765625 9.75 8.570312 9.933594 8.570312 10.15625 Z M 8.570312 10.15625 " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span class="blog-filters-item__date">28 JANUARY, 2020</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-filters-item">
+                                <img class="blog-filters-item__img"  src="images/blog/aside/2.jpg" alt="aside img">
+                                <div class="blog-filters-item__info">
+                                    <a class="blog-filters-item__link" href="#">
+                                        <h5 class="blog-filters-item__title">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </h5>
+                                        <span class="blog-filters-item__calendar">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="14px"
+                                                viewBox="0 0 12 13" version="1.1">
+                                                <g id="surface1">
+                                                    <path style="stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                        d="M 3.429688 0 C 3.902344 0 4.285156 0.363281 4.285156 0.8125 L 4.285156 1.625 L 7.714844 1.625 L 7.714844 0.8125 C 7.714844 0.363281 8.097656 0 8.570312 0 C 9.046875 0 9.429688 0.363281 9.429688 0.8125 L 9.429688 1.625 L 10.714844 1.625 C 11.425781 1.625 12 2.171875 12 2.84375 L 12 4.0625 L 0 4.0625 L 0 2.84375 C 0 2.171875 0.574219 1.625 1.285156 1.625 L 2.570312 1.625 L 2.570312 0.8125 C 2.570312 0.363281 2.953125 0 3.429688 0 Z M 0 4.875 L 12 4.875 L 12 11.78125 C 12 12.453125 11.425781 13 10.714844 13 L 1.285156 13 C 0.574219 13 0 12.453125 0 11.78125 Z M 1.714844 6.90625 L 1.714844 7.71875 C 1.714844 7.941406 1.90625 8.125 2.144531 8.125 L 3 8.125 C 3.234375 8.125 3.429688 7.941406 3.429688 7.71875 L 3.429688 6.90625 C 3.429688 6.683594 3.234375 6.5 3 6.5 L 2.144531 6.5 C 1.90625 6.5 1.714844 6.683594 1.714844 6.90625 Z M 5.144531 6.90625 L 5.144531 7.71875 C 5.144531 7.941406 5.335938 8.125 5.570312 8.125 L 6.429688 8.125 C 6.664062 8.125 6.855469 7.941406 6.855469 7.71875 L 6.855469 6.90625 C 6.855469 6.683594 6.664062 6.5 6.429688 6.5 L 5.570312 6.5 C 5.335938 6.5 5.144531 6.683594 5.144531 6.90625 Z M 9 6.5 C 8.765625 6.5 8.570312 6.683594 8.570312 6.90625 L 8.570312 7.71875 C 8.570312 7.941406 8.765625 8.125 9 8.125 L 9.855469 8.125 C 10.09375 8.125 10.285156 7.941406 10.285156 7.71875 L 10.285156 6.90625 C 10.285156 6.683594 10.09375 6.5 9.855469 6.5 Z M 1.714844 10.15625 L 1.714844 10.96875 C 1.714844 11.191406 1.90625 11.375 2.144531 11.375 L 3 11.375 C 3.234375 11.375 3.429688 11.191406 3.429688 10.96875 L 3.429688 10.15625 C 3.429688 9.933594 3.234375 9.75 3 9.75 L 2.144531 9.75 C 1.90625 9.75 1.714844 9.933594 1.714844 10.15625 Z M 5.570312 9.75 C 5.335938 9.75 5.144531 9.933594 5.144531 10.15625 L 5.144531 10.96875 C 5.144531 11.191406 5.335938 11.375 5.570312 11.375 L 6.429688 11.375 C 6.664062 11.375 6.855469 11.191406 6.855469 10.96875 L 6.855469 10.15625 C 6.855469 9.933594 6.664062 9.75 6.429688 9.75 Z M 8.570312 10.15625 L 8.570312 10.96875 C 8.570312 11.191406 8.765625 11.375 9 11.375 L 9.855469 11.375 C 10.09375 11.375 10.285156 11.191406 10.285156 10.96875 L 10.285156 10.15625 C 10.285156 9.933594 10.09375 9.75 9.855469 9.75 L 9 9.75 C 8.765625 9.75 8.570312 9.933594 8.570312 10.15625 Z M 8.570312 10.15625 " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span class="blog-filters-item__date">28 JANUARY, 2020</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-filters-item">
+                                <img class="blog-filters-item__img"  src="images/blog/aside/3.jpg" alt="aside img">
+                                <div class="blog-filters-item__info">
+                                    <a class="blog-filters-item__link" href="#">
+                                        <h5 class="blog-filters-item__title">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </h5>
+                                        <span class="blog-filters-item__calendar">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="14px"
+                                                viewBox="0 0 12 13" version="1.1">
+                                                <g id="surface1">
+                                                    <path style="stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                        d="M 3.429688 0 C 3.902344 0 4.285156 0.363281 4.285156 0.8125 L 4.285156 1.625 L 7.714844 1.625 L 7.714844 0.8125 C 7.714844 0.363281 8.097656 0 8.570312 0 C 9.046875 0 9.429688 0.363281 9.429688 0.8125 L 9.429688 1.625 L 10.714844 1.625 C 11.425781 1.625 12 2.171875 12 2.84375 L 12 4.0625 L 0 4.0625 L 0 2.84375 C 0 2.171875 0.574219 1.625 1.285156 1.625 L 2.570312 1.625 L 2.570312 0.8125 C 2.570312 0.363281 2.953125 0 3.429688 0 Z M 0 4.875 L 12 4.875 L 12 11.78125 C 12 12.453125 11.425781 13 10.714844 13 L 1.285156 13 C 0.574219 13 0 12.453125 0 11.78125 Z M 1.714844 6.90625 L 1.714844 7.71875 C 1.714844 7.941406 1.90625 8.125 2.144531 8.125 L 3 8.125 C 3.234375 8.125 3.429688 7.941406 3.429688 7.71875 L 3.429688 6.90625 C 3.429688 6.683594 3.234375 6.5 3 6.5 L 2.144531 6.5 C 1.90625 6.5 1.714844 6.683594 1.714844 6.90625 Z M 5.144531 6.90625 L 5.144531 7.71875 C 5.144531 7.941406 5.335938 8.125 5.570312 8.125 L 6.429688 8.125 C 6.664062 8.125 6.855469 7.941406 6.855469 7.71875 L 6.855469 6.90625 C 6.855469 6.683594 6.664062 6.5 6.429688 6.5 L 5.570312 6.5 C 5.335938 6.5 5.144531 6.683594 5.144531 6.90625 Z M 9 6.5 C 8.765625 6.5 8.570312 6.683594 8.570312 6.90625 L 8.570312 7.71875 C 8.570312 7.941406 8.765625 8.125 9 8.125 L 9.855469 8.125 C 10.09375 8.125 10.285156 7.941406 10.285156 7.71875 L 10.285156 6.90625 C 10.285156 6.683594 10.09375 6.5 9.855469 6.5 Z M 1.714844 10.15625 L 1.714844 10.96875 C 1.714844 11.191406 1.90625 11.375 2.144531 11.375 L 3 11.375 C 3.234375 11.375 3.429688 11.191406 3.429688 10.96875 L 3.429688 10.15625 C 3.429688 9.933594 3.234375 9.75 3 9.75 L 2.144531 9.75 C 1.90625 9.75 1.714844 9.933594 1.714844 10.15625 Z M 5.570312 9.75 C 5.335938 9.75 5.144531 9.933594 5.144531 10.15625 L 5.144531 10.96875 C 5.144531 11.191406 5.335938 11.375 5.570312 11.375 L 6.429688 11.375 C 6.664062 11.375 6.855469 11.191406 6.855469 10.96875 L 6.855469 10.15625 C 6.855469 9.933594 6.664062 9.75 6.429688 9.75 Z M 8.570312 10.15625 L 8.570312 10.96875 C 8.570312 11.191406 8.765625 11.375 9 11.375 L 9.855469 11.375 C 10.09375 11.375 10.285156 11.191406 10.285156 10.96875 L 10.285156 10.15625 C 10.285156 9.933594 10.09375 9.75 9.855469 9.75 L 9 9.75 C 8.765625 9.75 8.570312 9.933594 8.570312 10.15625 Z M 8.570312 10.15625 " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span class="blog-filters-item__date">28 JANUARY, 2020</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="blog-filters-item">
+                                <img class="blog-filters-item__img"  src="images/blog/aside/4.jpg" alt="aside img">
+                                <div class="blog-filters-item__info">
+                                    <a class="blog-filters-item__link" href="#">
+                                        <h5 class="blog-filters-item__title">
+                                            Corem ipsum dolor tetur adipisicing elit
+                                        </h5>
+                                        <span class="blog-filters-item__calendar">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="14px"
+                                                viewBox="0 0 12 13" version="1.1">
+                                                <g id="surface1">
+                                                    <path style="stroke:none;fill-rule:nonzero;fill:#9a9a9a;fill-opacity:1;"
+                                                        d="M 3.429688 0 C 3.902344 0 4.285156 0.363281 4.285156 0.8125 L 4.285156 1.625 L 7.714844 1.625 L 7.714844 0.8125 C 7.714844 0.363281 8.097656 0 8.570312 0 C 9.046875 0 9.429688 0.363281 9.429688 0.8125 L 9.429688 1.625 L 10.714844 1.625 C 11.425781 1.625 12 2.171875 12 2.84375 L 12 4.0625 L 0 4.0625 L 0 2.84375 C 0 2.171875 0.574219 1.625 1.285156 1.625 L 2.570312 1.625 L 2.570312 0.8125 C 2.570312 0.363281 2.953125 0 3.429688 0 Z M 0 4.875 L 12 4.875 L 12 11.78125 C 12 12.453125 11.425781 13 10.714844 13 L 1.285156 13 C 0.574219 13 0 12.453125 0 11.78125 Z M 1.714844 6.90625 L 1.714844 7.71875 C 1.714844 7.941406 1.90625 8.125 2.144531 8.125 L 3 8.125 C 3.234375 8.125 3.429688 7.941406 3.429688 7.71875 L 3.429688 6.90625 C 3.429688 6.683594 3.234375 6.5 3 6.5 L 2.144531 6.5 C 1.90625 6.5 1.714844 6.683594 1.714844 6.90625 Z M 5.144531 6.90625 L 5.144531 7.71875 C 5.144531 7.941406 5.335938 8.125 5.570312 8.125 L 6.429688 8.125 C 6.664062 8.125 6.855469 7.941406 6.855469 7.71875 L 6.855469 6.90625 C 6.855469 6.683594 6.664062 6.5 6.429688 6.5 L 5.570312 6.5 C 5.335938 6.5 5.144531 6.683594 5.144531 6.90625 Z M 9 6.5 C 8.765625 6.5 8.570312 6.683594 8.570312 6.90625 L 8.570312 7.71875 C 8.570312 7.941406 8.765625 8.125 9 8.125 L 9.855469 8.125 C 10.09375 8.125 10.285156 7.941406 10.285156 7.71875 L 10.285156 6.90625 C 10.285156 6.683594 10.09375 6.5 9.855469 6.5 Z M 1.714844 10.15625 L 1.714844 10.96875 C 1.714844 11.191406 1.90625 11.375 2.144531 11.375 L 3 11.375 C 3.234375 11.375 3.429688 11.191406 3.429688 10.96875 L 3.429688 10.15625 C 3.429688 9.933594 3.234375 9.75 3 9.75 L 2.144531 9.75 C 1.90625 9.75 1.714844 9.933594 1.714844 10.15625 Z M 5.570312 9.75 C 5.335938 9.75 5.144531 9.933594 5.144531 10.15625 L 5.144531 10.96875 C 5.144531 11.191406 5.335938 11.375 5.570312 11.375 L 6.429688 11.375 C 6.664062 11.375 6.855469 11.191406 6.855469 10.96875 L 6.855469 10.15625 C 6.855469 9.933594 6.664062 9.75 6.429688 9.75 Z M 8.570312 10.15625 L 8.570312 10.96875 C 8.570312 11.191406 8.765625 11.375 9 11.375 L 9.855469 11.375 C 10.09375 11.375 10.285156 11.191406 10.285156 10.96875 L 10.285156 10.15625 C 10.285156 9.933594 10.09375 9.75 9.855469 9.75 L 9 9.75 C 8.765625 9.75 8.570312 9.933594 8.570312 10.15625 Z M 8.570312 10.15625 " />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <span class="blog-filters-item__date">28 JANUARY, 2020</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+    {% include 'app/module/_article/_article.html' %}
+    </main>
+<!-- НАЧАЛО FOTTER -->
+    {% include 'app/module/_footer/_footer.html' %}
+    
+    <script src="js/main.min.js"></script>
+</body>
+</html>

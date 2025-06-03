@@ -1,0 +1,9 @@
+@import 'vars'; //будем подключать переменные 
+@import 'fonts'; //будемм подк. шрифты 
+@import 'reset'; //будемм подк. шрифты 
+@import '_libs'; //будемм подк. шрифты 
+@import '_global'; //что то глобальное на подобии reset.css
+@import '../module/_header/header';
+@import '../module/_products/products';
+@import '../module/_article/article';
+@import '../module/_footer/footer';

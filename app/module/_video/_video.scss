@@ -1,0 +1,19 @@
+.video {
+    padding: 120px 0;
+
+    &-inner {
+        background-image: url(../images/video_bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding: 140px 0;
+        position: relative;
+    }
+
+    &-inner__play {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 100px;
+    }
+}
